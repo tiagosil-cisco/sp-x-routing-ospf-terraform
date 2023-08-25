@@ -172,8 +172,8 @@ variable "ospf_interfaces" {
       passive_enable              = false
       passive_disable             = true
     },
-    
-        5 = {
+
+    5 = {
       device                      = "pe02"
       area                        = 0
       interface_id                = "Loopback0"
@@ -184,7 +184,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     6 = {
       device                      = "pe02"
       area                        = 0
@@ -229,7 +229,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     10 = {
       device                      = "pe03"
       area                        = 0
@@ -274,7 +274,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     14 = {
       device                      = "pe04"
       area                        = 0
@@ -319,7 +319,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     18 = {
       device                      = "p01"
       area                        = 0
@@ -397,7 +397,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     25 = {
       device                      = "p03"
       area                        = 0
@@ -475,7 +475,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     32 = {
       device                      = "p02"
       area                        = 0
@@ -564,7 +564,7 @@ variable "ospf_interfaces" {
       passive_enable              = true
       passive_disable             = false
     },
-    
+
     40 = {
       device                      = "p04"
       area                        = 0
@@ -774,6 +774,6 @@ variable "ospf_interfaces" {
       passive_enable              = false
       passive_disable             = true
     },
-  
+
   }
 }
