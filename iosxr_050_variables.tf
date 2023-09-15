@@ -57,6 +57,9 @@ locals {
   xr_password = "C!sco123"
 
   ospf_process_id = "1"
+  hello_interval  = 10
+  dead_interval   = 40
+  priority        = 10
 }
 
 variable "routers_info" {
