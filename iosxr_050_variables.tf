@@ -1,7 +1,13 @@
 locals {
   project_title       = "SP-B"
   project_description = "Topology created using Terraform to represent SP-X"
+  routers             = jsondecode(file("${path.module}/sp-x-devices.json"))
+  routers_info        = jsondecode(file("${path.module}/sp-x-routers-info-variable.json"))
+  ospf_interfaces     = jsondecode(file("${path.module}/sp-x-ospf-interfaces-variable.json"))
 
+
+
+  /*
   routers = [
     {
       name = "pe01"
@@ -52,7 +58,7 @@ locals {
       host = "10.0.1.62"
     },
   ]
-
+*/
   xr_username = "admin"
   xr_password = "C!sco123"
 
@@ -61,7 +67,7 @@ locals {
   dead_interval   = 40
   priority        = 10
 }
-
+/*
 variable "routers_info" {
   type = map(any)
   default = {
@@ -127,6 +133,7 @@ variable "routers_info" {
     },
   }
 }
+
 
 variable "ospf_interfaces" {
   type = map(any)
@@ -780,3 +787,4 @@ variable "ospf_interfaces" {
 
   }
 }
+*/

@@ -1,5 +1,5 @@
 resource "iosxr_router_ospf_area_interface" "interfaces" {
-  for_each                    = var.ospf_interfaces
+  for_each                    = local.ospf_interfaces
   device                      = each.value.device
   process_name                = local.ospf_process_id
   area_id                     = each.value.area

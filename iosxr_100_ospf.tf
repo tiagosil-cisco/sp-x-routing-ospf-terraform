@@ -1,5 +1,5 @@
 resource "iosxr_router_ospf" "ospf_process" {
-  for_each       = var.routers_info
+  for_each       = local.routers_info
   device         = each.key
   process_name   = local.ospf_process_id
   hello_interval = local.hello_interval
